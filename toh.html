@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Towers of Hanoi</title>
+    <link rel="stylesheet" type="text/css" href="toh_style.css">
+
+</head>
+
+<body>
+    <div id="website-wrapper">
+        <div id="page">
+            <div id="title">
+                <h1> Towers of Hanoi</h1>
+            </div>
+            </br>
+            </br>
+            </br>
+            <div id="towers">
+                <div class="t" value="0">
+                    <ul id="t1" value="0" class="base">
+                        <ul class="line1"></ul>
+                    </ul>
+                </div>
+                <div class="t" value="1">
+                    <ul id="t2" value="1" class="base">
+                        <ul class="line2"></ul>
+                    </ul>
+                </div>
+                <div class="t" value="2">
+                    <ul id="t2" value="2" class="base">
+                        <ul class="line3"></ul>
+                    </ul>
+                </div>
+            </div>
+            </br>
+            </br>
+            </br>
+            <div id="discno">
+                จำนวนจาน: <input
+                    style="font-size: 15px; height: 0.8cm; width: 2cm; background-color: rgb(41, 42, 53); color: aliceblue;"
+                    type="number" id="box" max="7" min="1" value="3"></input>
+            </div>
+
+            </br>
+            </br>
+
+            <div class="buttons-container">
+                <div id="restart">
+                    <button type="button" class="buttons">restart</button>
+                </div>
+                <div id="undo">
+                    <button type="button" class="buttons">undo</button>
+                </div>
+                <div id="redo">
+                    <button type="button" class="buttons">redo</button>
+                </div>
+                <button type="button" id="show-popup-button" class="buttons">Rules</button>
+
+            </div>
+
+            <div id="popup-container">
+                <div id="popup">
+                    <h2 style="text-align: center;">Rules of Tower Of Hanoi</h2>
+                    <h3 style="text-align: center;">เราจะเรียกแผ่นจานนี้ว่า TOH นะ</h3>
+
+                    <div style="text-align: center;">
+                        <img src="https://cdn.discordapp.com/attachments/1001876798717562920/1144940976977215579/image.png"
+                            alt="Image" width="80%">
+                    </div>
+                    <p style="margin-left: 4rem;">1: สามารถย้าย TOH ได้ทีละก้อนเท่านั้น</p>
+                    <p style="margin-left: 4rem;">2: ไม่สามารถวาง TOH อันใหญ่บนอันเล็กได้</p>
+                    <p style="margin-left: 4rem;">3: ทำยังไงก็ได้ให้สามารถย้าย TOH จากเสาซ้ายสุด ไปขวาสุด ให้ได้</p>
+                    <h4 style="text-align: center; color: black;"><br>คลิกหนึ่งครั้งที่ใดก็ได้เพื่อปิด</h4>
+                    <h4 style="text-align: center; color: red;">** ทำขึ้นมาเพื่อประกอบการศึกษาเท่านั้น
+                        **<br />** เป็นงานรีบเร่งใช้ ChatGPT เกือบ 60% ของโปรเจค **
+                    </h4>
+                </div>
+            </div>
+
+            <script src=" https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js "></script>
+            <script type="text/javascript" src="toh_js.js"></script>
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
